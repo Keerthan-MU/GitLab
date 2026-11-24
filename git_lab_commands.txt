@@ -1,0 +1,98 @@
+    1  git --version
+    2  git config --global user.name "Keerthan-MU"
+    3  git config --global user.email "keerthanmakki@gmail.com"
+    4  git clone https://github.com/Keerthan-MU/GitLab.git
+    5  mkdir git-lab
+    6  git init -b master
+    7  git remote add origin https://github.com/Keerthan-MU/GitLab.git
+    8  echo "# Git Lab" > README.md
+    9  git status
+   10  git add README.md
+   11  git status
+   12  git commit -m "Initial commit"
+   13  git log
+   14  git push -u origin master
+   15  git branch
+   16  git branch feature-branch
+   17  git switch feature-branch
+   18  echo "Feature work" > feature.txt
+   19  git add feature.txt
+   20  git commit -m "Add feature"
+   21  git switch master
+   22  git merge feature-branch
+   23  git log --oneline --all
+   24  git switch feature-branch
+   25  echo "New changes" >> feature.txt
+   26  git status
+   27  git stash
+   28  git switch master
+   29  git switch feature-branch
+   30  git stash apply
+   31  git status
+   32  git add feature.txt
+   33  git commit -m "Update feature.txt"
+   34  git switch master
+   35  cd ..
+   36  git clone https://github.com Keerthan-MU
+   37  cd ~
+   38  git clone https://github.com/Keerthan-MU/project.git
+   39  git clone https://github.com/Keerthan-MU/GitLab.git
+   40  git clone https://github.com/Keerthan-MU/GitLab.git project
+   41  cd project
+   42  git remote -v
+   43  cd ~
+   44  git branch
+   45  git fetch origin
+   46  git switch master
+   47  git rebase origin/master
+   48  git log --oneline --graph --all
+   49  git switch feature-branch
+   50  echo "Feature update for Program 6" >> feature.txt
+   51  git add feature.txt
+   52  git commit -m "Update feature for merge"
+   53  git switch masater
+   54  git switch master
+   55  git merge --no-ff feature-branch -m "Merge feature branch into master"
+   56  git log --oneline --graph
+   57  git log --oneline
+   58  git tag v1.0
+   59  git tag
+   60  git show v1.0
+   61  git checkout -b source-branch
+   62  echo "A" > cherry.txt && git add cherry.txt && git commit -m "Commit A"
+   63  echo "B" >> cherry.txt && git add cherry.txt && git commit -m "Commit B"
+   64  echo "C" >> cherry.txt && git add cherry.txt && git commit -m "Commit C"
+   65  echo "D" >> cherry.txt && git add cherry.txt && git commit -m "Commit D"
+   66  git log source-branch --oneline
+   67  git switch master
+   68  git cherry-pick HASH_B^..HASH_D
+   69  git cherry-pick #_B^..#_D
+   70  git cherry-pick 188ab9f^..65cf516
+   71  git add cherry.txt
+   72  git cherry-pick --continue --no-edit
+   73  git log --oneline -5
+   74  git log --oneline
+   75  git show COMMIT_ID
+   76  git show 5c1e547
+   77  git show --no-patch 5c1e547
+   78  git show -s --format="%H%n%an%n%ad%n%s" 5c1e547
+   79  GIT_AUTHOR_DATE="2025-06-15T12:00:00" git commit --allow-empty --author="JohnDoe <johndoe@example.com>" -m "Sample 2025 commit"
+   80  git log --author="JohnDoe" --since="2025-01-01" --until="2025-12-31 23:59:59"
+   81  git log --author="JohnDoe" --since="2025-01-01" --until="2025-12-31 23:59:59" --oneline
+   82  GIT_AUTHOR_DATE="2025-06-15T12:00:00" GIT_COMMITTER_DATE="2025-06-15T12:00:00" git commit --allow-empty --author="JohnDoe <johndoe@example.com>" -m "Sample 2025 commit"
+   83  $ git log --author="JohnDoe" --since="2025-01-01" --until="2025-12-31 23:59:59"
+   84  git log --author="JohnDoe" --since="2025-01-01" --until="2025-12-31 23:59:59"
+   85  git log --author="JohnDoe" --since="2025-01-01" --until="2025-12-31 23:59:59" --oneline
+   86  git log -5
+   87  git log -5 --oneline
+   88  git log -5 --oneline
+   89  git revert COMMIT_ID --no-edit
+   90  git revert 5b753bf --no-edit
+   91  git status
+   92  git log --oneline
+   93  git push origin master --tags
+   94  git revert 5c1e547 --no-edit
+   95  git status
+   96  git log --oneline -5
+   97  git push origin master
+   98  history > git_lab_commands.txt
